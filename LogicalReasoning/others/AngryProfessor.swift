@@ -14,11 +14,12 @@
 //For single case at a time
 func angryProfessor(k: Int, a: [Int]) -> String {
     // Write your code here
-    var studentsOnTime = 0
-    for student in a {
-        if student <= 0 { studentsOnTime += 1}
+    var sOnTime = 0
+    for sArrival in a {
+        if sArrival <= 0 { sOnTime += 1}
     }
-    return (studentsOnTime < k) ? "YES" : "NO"
+    return (sOnTime < k) ? "YES" : "NO"
+    
 }
 
 print(angryProfessor(k: 3, a: [-1,-3,4,2]))//YES
